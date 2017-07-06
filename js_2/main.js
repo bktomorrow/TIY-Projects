@@ -44,7 +44,7 @@ maxOfThree(biggest, bigger, smallest);
 // Then, write and example of using the function.
 
 function isVowel(char){
-    if(char === (a || e || i || o || u)){
+    if((char === a )||(char === e )||(char === i )||(char === o )|| (char === u ))){
       return true;
     }
     else{
