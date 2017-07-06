@@ -1,0 +1,93 @@
+/*
+    BACKGROUND COLORS
+
+    mobile  : #bff
+    tablet  : #fcf
+    desktop : #ff9
+
+    BREAKPOINTS
+
+    tablet  : 700px
+    desktop : 1000px
+*/
+
+/*** Default Mobile Styles ****************************/
+body {
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+  margin:0;
+  padding-left:0;
+}
+.inner ul li{
+  background-color: white;
+}
+  li {
+    margin:1em 0;
+    background-color:#bff;
+    padding: 1em;
+    list-style-type: none;
+    border-radius: 5px;
+  }
+
+@media (min-width: 700px) and (max-width:1000px){
+  li {
+    background-color: #fcf;
+  }
+  li:first-child, li:nth-child(2)  {
+    width: 45%;
+    height: inherit;
+    display: inline-grid;
+  }
+  .inner ul li{
+    background-color: white;
+    width:45%;
+    height: inherit;
+
+    display: inline-block;
+  }
+  li:last-child, li:nth-child(5)  {
+    width: 45%;
+    height: inherit;
+    display: inline-grid;
+  }
+}
+
+@media (min-width: 1000px){
+
+  li {
+    background-color: #ff9;
+    display:inline-flex;
+    width:16%;
+  }
+  .inner{
+    width: inherit;
+    order: 6
+
+  }
+  .inner ul li{
+    background-color: white;
+    width:20%;
+    height: inherit;
+    display: inline-block;
+  }
+}
+
+/**** Tablet Styles ***********************************/
+
+
+
+
+
+
+
+
+/**** Desktop Styles ***********************************/
